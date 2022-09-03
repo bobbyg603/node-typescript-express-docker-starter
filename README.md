@@ -17,7 +17,7 @@ This is a template repo for getting started with [Express](https://expressjs.com
 
 ## Getting Started
 
-Click the green Use this template button to copy this repo to your GitHub account. Once you've copied the repo clone it to your workspace and install the dependencies:
+Click the green [Use this template](https://github.com/bobbyg603/express-typescript-starter/generate) button to copy this repo to your GitHub account. Once you've copied the repo, clone it to your workspace and install the dependencies:
 
 ```sh
 npm i
