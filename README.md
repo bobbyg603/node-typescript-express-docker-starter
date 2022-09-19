@@ -2,23 +2,22 @@
 
 ![node typescript express docker logos](https://user-images.githubusercontent.com/2646053/191009021-82d404d7-3d51-4dd3-ad0a-51009f89e048.png)
 
-[📷](https://github.com/ljlm0402/typescript-express-starter)
-
-## Definitions
+## 📖 Definitions
 
 | Library | Description |
 | ------- | ----------- |
-| Express | Minimal and flexible Node.js web application framework for creating [APIs](https://en.wikipedia.org/wiki/API). |
-| TypeScript | A [strongly typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing) programming language that builds on JavaScript, giving you better tooling at any scale. |
-| ESLint  | [Statically analyzes](https://en.wikipedia.org/wiki/Static_program_analysis) your code to quickly find problems. |
-| Jest    | A delightful JavaScript testing framework with a focus on simplicity. |
-| Docker  | Package software into standardized units for development, shipment and deployment |
+| [Node.js](https://nodejs.org/en/) | JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/) |
+| [Express](https://expressjs.com/) | Minimal and flexible Node.js web application framework for creating [APIs](https://en.wikipedia.org/wiki/API). |
+| [TypeScript](https://www.typescriptlang.org/) | A [strongly typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing) programming language that builds on JavaScript, giving you better tooling at any scale. |
+| [ESLint](https://eslint.org/) | [Statically analyzes](https://en.wikipedia.org/wiki/Static_program_analysis) your code to quickly find problems. |
+| [Jest](https://jestjs.io/) | A delightful JavaScript testing framework with a focus on simplicity. |
+| [Docker](https://www.docker.com/) | Package software into standardized units for development, shipment and deployment |
 
-## About
+## 🧑‍🏫 About
 
 This is a template repo for building a [Node.js](https://nodejs.org/en/) [API](https://en.wikipedia.org/wiki/API) with [Express](https://expressjs.com/) using [TypeScript](https://www.typescriptlang.org/). This repo contains a minimal [ESLint](https://eslint.org/) configuration to enforce coding styles, and comes equipped with [Jest](https://jestjs.io/) for unit and integration testing. Additionally, this repo demonstrates organizing controllers similarly to how components are organized in an [Angular](https://angular.io/guide/file-structure) project. Controllers are grouped by the API resource they serve, and the associated unit (spec.ts) and integration (e2e.ts) files live in the same directory. Finally, this template leverages [Docker](https://www.docker.com/) and [Remote Containers](https://code.visualstudio.com/docs/remote/containers) to ensure consistency in development and production environments.
 
-## Getting Started
+## 🏎 Getting Started
 
 The recommended development method for this repo is via a Remote Container and VS Code. As your development environment grows in complexity you can leverage Docker to manage said complexity. Docker will automatically manage development environments so that you don't waste time manually configuring systems for every user that wants to help you develop your app.
 
@@ -40,7 +39,11 @@ If you're not prompted to open the workspace in a Remote Container, you can also
 
 <img width="881" alt="vs code command palette" src="https://user-images.githubusercontent.com/2646053/191013677-bb8bd90d-66cc-4577-9ad0-854de75f1b27.png">
 
-This will leverage [Dockerfile.dev](./.devcontainer/Dockerfile.dev) to build a container and install project's dependencies with npm. Once the workspace has loaded you can run the unit and integration tests to ensure everything installed correctly:
+This will leverage [Dockerfile.dev](./.devcontainer/Dockerfile.dev) to build a container and install project's dependencies with npm. 
+
+### Testing
+
+Once the workspace has loaded you can run the unit and integration tests to ensure everything installed correctly:
 
 ```sh
 npm test && npm run e2e
