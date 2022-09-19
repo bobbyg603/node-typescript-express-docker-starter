@@ -12,7 +12,7 @@
 | TypeScript | A [strongly typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing) programming language that builds on JavaScript, giving you better tooling at any scale. |
 | ESLint  | [Statically analyzes](https://en.wikipedia.org/wiki/Static_program_analysis) your code to quickly find problems. |
 | Jest    | A delightful JavaScript testing framework with a focus on simplicity. |
-[ Docker  | Package software into standardized units for development, shipment and deployment |
+| Docker  | Package software into standardized units for development, shipment and deployment |
 
 ## About
 
