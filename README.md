@@ -1,4 +1,4 @@
-# Express TypeScript Starter 
+# Node Express TypeScript Docker Starter 
 
 ![node typescript express docker logos](https://user-images.githubusercontent.com/2646053/191009021-82d404d7-3d51-4dd3-ad0a-51009f89e048.png)
 
