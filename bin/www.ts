@@ -7,9 +7,11 @@
 
 import app from '../app';
 import debug from 'debug';
+import dotenv from 'dotenv';
 import { createServer } from 'http';
 import { HttpError } from 'http-errors';
 debug('express-generator:server');
+dotenv.config();
 
 /**
  * Get port from environment and store in Express.
