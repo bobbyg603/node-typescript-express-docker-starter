@@ -40,7 +40,7 @@ If you're not prompted to open the workspace in a Remote Container, you can also
 
 <img width="881" alt="vs code command palette" src="https://user-images.githubusercontent.com/2646053/191013677-bb8bd90d-66cc-4577-9ad0-854de75f1b27.png">
 
-This will leverage [Dockerfile.dev](todo bg) to build a container and install project's dependencies with npm. Once the workspace has loaded you can run the unit and integration tests to ensure everything installed correctly:
+This will leverage [Dockerfile.dev](./.devcontainer/Dockerfile.dev) to build a container and install project's dependencies with npm. Once the workspace has loaded you can run the unit and integration tests to ensure everything installed correctly:
 
 ```sh
 npm test && npm run e2e
