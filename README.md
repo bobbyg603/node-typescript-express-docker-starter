@@ -31,15 +31,15 @@ Click the green [Use this template](https://github.com/bobbyg603/express-typescr
 git clone https://github.com/bobbyg603/node-typescript-express-docker-starter
 ```
 
-Open the downloaded repo in VS Code and ensure Docker Desktop is running. If you've installed the Docker and Remote Containers extensions correctly you should be prompted to open the project in a Remote Container.
+Open the downloaded repo in VS Code and ensure Docker Desktop is running. If you've installed the Docker and Remote Containers extensions correctly you should be prompted to open the project in a Remote Container:
 
 <img width="769" alt="open in remote container" src="https://user-images.githubusercontent.com/2646053/191012971-e087ef57-2f2d-4d54-a79b-bed577669a3c.png">
 
-If you're not prompted to open the workspace in a Remote Container, you can also open the repo in a Remote Container via the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)
+If you're not prompted to open the workspace in a Remote Container, you can also open the repo in a Remote Container via the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette):
 
 <img width="881" alt="vs code command palette" src="https://user-images.githubusercontent.com/2646053/191013677-bb8bd90d-66cc-4577-9ad0-854de75f1b27.png">
 
-This will leverage [Dockerfile.dev](./.devcontainer/Dockerfile.dev) to build a container and install project's dependencies with npm. 
+This will leverage [Dockerfile.dev](./.devcontainer/Dockerfile.dev) to build a container and install project's dependencies with [npm](https://www.npmjs.com/). 
 
 ### Testing
 
