@@ -20,20 +20,35 @@
 			"platform": "node"
 		},
 		{
-			"type": "docker-run",
-			"label": "docker-run: debug",
-			"dependsOn": [
-				"docker-build"
-			],
-			"dockerRun": {
-				"env": {
-					"DEBUG": "*",
-					"NODE_ENV": "development"
-				}
-			},
-			"node": {
-				"enableDebugging": true
-			}
-		}
+			"label": "docker-compose: run debug",
+            "problemMatcher": [],
+            "dependsOrder": "sequence",
+            "dependsOn": [
+				"docker-build",
+				"docker-compose: down",
+                "docker-compose: up",
+            ]
+		},
+		{
+            "label": "docker-compose: up",
+            "command": "docker-compose",
+            "type": "process",
+            "args": [
+                "-f",
+                "${workspaceFolder}/docker-compose.debug.yml",
+                "up",
+                "-d"
+            ]
+        },
+		{
+            "label": "docker-compose: down",
+            "command": "docker-compose",
+            "type": "process",
+            "args": [
+                "-f",
+                "${workspaceFolder}/docker-compose.debug.yml",
+                "down"
+            ]
+        },
 	]
 }
