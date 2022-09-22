@@ -67,7 +67,7 @@ The VS Code Debugger can also be attached to a Node.js instance running inside a
 
 <img width="520" alt="Docker Node JS Launch" src="https://user-images.githubusercontent.com/2646053/191792862-69c1aafd-6363-46ad-a113-3596c6d98024.png">
 
-The development server should begin listening for web requests. If you navigate to https://localhost:3000 in your browser you should see something that resembles the following:
+The development server should begin listening for web requests. If you navigate to http://localhost:3000 in your browser you should see something that resembles the following:
 
 <img width="1728" alt="Development Server Running" src="https://user-images.githubusercontent.com/2646053/191793260-95605ff2-4cb0-464a-b526-1f390e2707f7.png">
 
