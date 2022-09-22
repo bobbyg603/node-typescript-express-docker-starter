@@ -71,6 +71,7 @@ The development server should begin listening for web requests. If you navigate 
 
 // todo bg image
 
-## 🏎 Production
 
-TODO BG
+### Contributing
+
+If you believe that this example can be improved, please open an [issue](https://github.com/bobbyg603/node-typescript-express-docker-starter/pulls) or submit a [pull request](https://github.com/bobbyg603/node-typescript-express-docker-starter/pulls)! 
