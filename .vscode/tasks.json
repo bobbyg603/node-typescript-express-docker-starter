@@ -1,0 +1,54 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "docker-build",
+			"label": "docker-build",
+			"platform": "node",
+			"dockerBuild": {
+				"dockerfile": "${workspaceFolder}/Dockerfile",
+				"context": "${workspaceFolder}",
+				"pull": true
+			}
+		},
+		{
+			"type": "docker-run",
+			"label": "docker-run: release",
+			"dependsOn": [
+				"docker-build"
+			],
+			"platform": "node"
+		},
+		{
+			"label": "docker-compose: run debug",
+            "problemMatcher": [],
+            "dependsOrder": "sequence",
+            "dependsOn": [
+				"docker-build",
+				"docker-compose: down",
+                "docker-compose: up",
+            ]
+		},
+		{
+            "label": "docker-compose: up",
+            "command": "docker-compose",
+            "type": "process",
+            "args": [
+                "-f",
+                "${workspaceFolder}/docker-compose.debug.yml",
+                "up",
+                "-d"
+            ]
+        },
+		{
+            "label": "docker-compose: down",
+            "command": "docker-compose",
+            "type": "process",
+            "args": [
+                "-f",
+                "${workspaceFolder}/docker-compose.debug.yml",
+                "down"
+            ]
+        },
+	]
+}
