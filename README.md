@@ -43,7 +43,7 @@ npm test && npm run e2e
 
 You can also run and debug tests from within the VS Code Testing Explorer by installing [Jest Test Explorer](https://marketplace.visualstudio.com/items?itemName=kavod-io.vscode-jest-test-adapter).
 
-// todo bg image
+<img width="1539" alt="VS Code Jest Test Explorer Debug" src="https://user-images.githubusercontent.com/2646053/191792687-8ea2d4f0-e97c-4c21-8851-f7dc4fb53849.png">
 
 ### Developing
 
@@ -61,16 +61,15 @@ npm start
 
 If you'd like to attach the VS Code Debugger to a Node.js instance running on your local machine use the **Launch Program** task.
 
-// todo bg picture
+<img width="520" alt="VS Code Launch Program" src="https://user-images.githubusercontent.com/2646053/191792797-08f21fca-be5a-488b-b4f0-7c47b4a312ef.png">
 
 The VS Code Debugger can also be attached to a Node.js instance running inside a Docker container via the **Docker: Node.js Launch** task.
 
-// todo bg picture
+<img width="520" alt="Docker Node JS Launch" src="https://user-images.githubusercontent.com/2646053/191792862-69c1aafd-6363-46ad-a113-3596c6d98024.png">
 
 The development server should begin listening for web requests. If you navigate to https://localhost:3000 in your browser you should see something that resembles the following:
 
-// todo bg image
-
+<img width="1728" alt="Development Server Running" src="https://user-images.githubusercontent.com/2646053/191793260-95605ff2-4cb0-464a-b526-1f390e2707f7.png">
 
 ### Contributing
 
