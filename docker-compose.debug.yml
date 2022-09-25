@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  expresstypescriptstarter:
-    image: expresstypescriptstarter
+  express-api:
+    image: node-typescript-express-docker-starter
     build:
       context: .
       dockerfile: ./Dockerfile

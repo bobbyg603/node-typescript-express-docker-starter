@@ -9,6 +9,8 @@
   "private": false,
   "scripts": {
     "build": "tsc",
+    "docker:build": "docker build .",
+    "docker:run": "docker compose up",
     "prestart": "npm run build",
     "start": "node ./dist/bin/www.js",
     "lint": "eslint . --ext .ts --fix",
