@@ -47,6 +47,14 @@ You can also run and debug tests from within the VS Code Testing Explorer by ins
 
 ### Developing
 
+This template requires Node.js version 18+. A `.nvmrc` file has been included in this repo so that  [nvm](https://github.com/nvm-sh/nvm) can be used to quickly switch between major versions of [Node.js](https://nodejs.org/).
+
+Install nvm for [POSIX](https://github.com/nvm-sh/nvm) or [Windows](https://github.com/coreybutler/nvm-windows) and run the following command at the root of the repo to switch to Node.js 18:
+
+```sh
+nvm use
+```
+
 If you'd like to automatically build and restart the development sever when source files are changed you can can run the `watch` command:
 
 ```sh
