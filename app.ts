@@ -2,6 +2,7 @@ import cookieParser from 'cookie-parser';
 import express from 'express';
 import createHttpError, { HttpError } from 'http-errors';
 import morgan from 'morgan';
+import { createFilesRoutes } from './src/routes/files/files.router';
 import { createHomeRoutes } from './src/routes/home/home.router';
 
 const app = express();
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 createHomeRoutes(app);
+createFilesRoutes(app);
 
 app.use((_req, res) => {
     res.status(404).send(createHttpError('Not found'));

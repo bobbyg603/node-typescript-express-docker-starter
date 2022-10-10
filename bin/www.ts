@@ -5,19 +5,28 @@
  * Module dependencies.
  */
 
-import app from '../app';
 import debug from 'debug';
-import dotenv from 'dotenv';
+import fs from 'fs';
 import { createServer } from 'http';
 import { HttpError } from 'http-errors';
+import app from '../app';
+import { getConfig } from '../config';
 debug('express-generator:server');
-dotenv.config();
+const config = getConfig();
+
+/**
+ * Create a directory for uploaded files if one does not exist.
+ */
+
+if (!fs.existsSync(config.fileUploadPath)) {
+    fs.mkdirSync(config.fileUploadPath);
+}
 
 /**
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(config.port);
 app.set('port', port);
 
 /**
