@@ -3,6 +3,8 @@ version: '3.4'
 services:
   express-api:
     image: node-typescript-express-docker-starter
+    volumes: 
+      - "files:/usr/src/app/files"
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -12,3 +14,5 @@ services:
       - 3000:3000
       - 9229:9229
     command: ["node", "--inspect=0.0.0.0:9229", "./dist/bin/www.js"]
+volumes:
+  files:
