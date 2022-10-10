@@ -43,7 +43,7 @@ npm test && npm run e2e
 
 You can also run and debug tests from within the VS Code Testing Explorer by installing [Jest Test Explorer](https://marketplace.visualstudio.com/items?itemName=kavod-io.vscode-jest-test-adapter).
 
-<img width="1539" alt="VS Code Jest Test Explorer Debug" src="https://user-images.githubusercontent.com/2646053/191792687-8ea2d4f0-e97c-4c21-8851-f7dc4fb53849.png">
+<img width="1658" alt="VS Code Jest Test Explorer Debug" src="https://user-images.githubusercontent.com/2646053/194787888-81bba719-8ec5-42b7-bd85-e5bfd5c3830e.png">
 
 ### Developing
 
