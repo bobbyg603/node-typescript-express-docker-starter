@@ -3,6 +3,8 @@ version: '3.4'
 services:
   express-api:
     image: node-typescript-express-docker-starter
+    volumes: 
+      - "files:/usr/src/app/files"
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -10,3 +12,5 @@ services:
       NODE_ENV: production
     ports:
       - 3000:3000
+volumes:
+  files:

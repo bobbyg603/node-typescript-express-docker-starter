@@ -1,7 +1,6 @@
-import dotenv from 'dotenv';
-dotenv.config();
+import { getConfig } from '../../../config';
 
-const port = process.env.PORT ?? 3000;
+const port = getConfig().port;
 const url = `http://localhost:${port}`;
 
 describe('Home', () => {
