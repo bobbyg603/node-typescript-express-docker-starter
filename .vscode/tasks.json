@@ -20,7 +20,7 @@
 			"platform": "node"
 		},
 		{
-			"label": "docker-compose: run debug",
+			"label": "docker-compose: run dev",
             "problemMatcher": [],
             "dependsOrder": "sequence",
             "dependsOn": [
@@ -35,7 +35,7 @@
             "type": "process",
             "args": [
                 "-f",
-                "${workspaceFolder}/docker-compose.debug.yml",
+                "${workspaceFolder}/docker-compose.dev.yml",
                 "up",
                 "-d"
             ]
@@ -46,7 +46,7 @@
             "type": "process",
             "args": [
                 "-f",
-                "${workspaceFolder}/docker-compose.debug.yml",
+                "${workspaceFolder}/docker-compose.dev.yml",
                 "down"
             ]
         },

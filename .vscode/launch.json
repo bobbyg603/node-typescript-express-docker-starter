@@ -20,14 +20,16 @@
             "name": "Docker: Node.js Launch",
             "type": "node",
             "request": "attach",
-            "preLaunchTask": "docker-compose: run debug",
-            "remoteRoot": "/usr/src/app",
+            "preLaunchTask": "docker-compose: run dev",
+            "localRoot": "${workspaceRoot}/",
+            "remoteRoot": "/app",
         },
         {
             "type": "node",
             "request": "attach",
             "name": "Docker: Attach to Node",
-            "remoteRoot": "/usr/src/app"
+            "localRoot": "${workspaceRoot}/",
+            "remoteRoot": "/app"
         },
     ]
 }

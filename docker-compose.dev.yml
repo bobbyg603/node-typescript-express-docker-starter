@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+ upload:
+  build:
+   context: .
+  ports:
+   - 3000:3000
+   - 9229:9229
+  environment:
+   - PORT=3000
+  volumes:
+   - ./:/app
+   - /app/node_modules
+  command: ["node", "--inspect=0.0.0.0:9229", "./dist/bin/www.js"]
