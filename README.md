@@ -47,7 +47,7 @@ You can also run and debug tests from within the VS Code Testing Explorer by ins
 
 ### Developing
 
-This template requires Node.js version 18+. A `.nvmrc` file has been included in this repo so that  [nvm](https://github.com/nvm-sh/nvm) can be used to quickly switch between major versions of [Node.js](https://nodejs.org/).
+This template requires Node.js version 19+. A `.nvmrc` file has been included in this repo so that  [nvm](https://github.com/nvm-sh/nvm) can be used to quickly switch between major versions of [Node.js](https://nodejs.org/).
 
 Install nvm for [POSIX](https://github.com/nvm-sh/nvm) or [Windows](https://github.com/coreybutler/nvm-windows) and run the following command at the root of the repo to switch to Node.js 18:
 
@@ -71,13 +71,22 @@ If you'd like to attach the VS Code Debugger to a Node.js instance running on yo
 
 <img width="520" alt="VS Code Launch Program" src="https://user-images.githubusercontent.com/2646053/191792797-08f21fca-be5a-488b-b4f0-7c47b4a312ef.png">
 
-The VS Code Debugger can also be attached to a Node.js instance running inside a Docker container via the **Docker: Node.js Launch** task.
-
-<img width="520" alt="Docker Node JS Launch" src="https://user-images.githubusercontent.com/2646053/191792862-69c1aafd-6363-46ad-a113-3596c6d98024.png">
 
 The development server should begin listening for web requests. If you navigate to http://localhost:3000 in your browser you should see something that resembles the following:
 
 <img width="1728" alt="Development Server Running" src="https://user-images.githubusercontent.com/2646053/191793260-95605ff2-4cb0-464a-b526-1f390e2707f7.png">
+
+### Docker
+
+The VS Code Debugger can also be attached to a Node.js instance running inside a Docker container via the **Docker: Node.js Launch** task.
+
+<img width="520" alt="Docker Node JS Launch" src="https://user-images.githubusercontent.com/2646053/191792862-69c1aafd-6363-46ad-a113-3596c6d98024.png">
+
+If you'd like to watch your file system for changes and reload your application when changes are detected you can run the `build:watch` command on the host machine:
+
+```sh
+npm run build:watch
+```
 
 ### Contributing
 

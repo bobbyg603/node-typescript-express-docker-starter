@@ -1,10 +1,10 @@
 version: '3.4'
 
 services:
-  express-api:
+  server:
     image: node-typescript-express-docker-starter
     volumes: 
-      - "files:/usr/src/app/files"
+      - "files:/app/files"
     build:
       context: .
       dockerfile: ./Dockerfile

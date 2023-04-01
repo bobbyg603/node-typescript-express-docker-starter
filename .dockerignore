@@ -22,5 +22,4 @@
 **/values.dev.yaml
 README.md
 jest.config.ts
-dist
 .eslintrc
