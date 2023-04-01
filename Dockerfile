@@ -1,10 +1,10 @@
-FROM node:lts-alpine as Builder
+FROM node:19-alpine as Builder
 
 WORKDIR /tmp
 COPY . .
 RUN ls -la && npm ci --quiet && npm run build
 
-FROM node:lts-alpine
+FROM node:19-alpine
 
 WORKDIR /app
 ENV NODE_ENV=production

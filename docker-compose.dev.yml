@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
- upload:
+ server:
   build:
    context: .
   ports:
@@ -12,4 +12,4 @@ services:
   volumes:
    - ./:/app
    - /app/node_modules
-  command: ["node", "--inspect=0.0.0.0:9229", "./dist/bin/www.js"]
+  command: ["node", "--inspect=0.0.0.0:9229", "--watch", "./dist/bin/www.js"]
